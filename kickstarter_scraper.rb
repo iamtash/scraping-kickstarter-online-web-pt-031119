@@ -37,7 +37,7 @@ def create_project_hash
 
   project_hash = {}
   projects.each do |project|
-    project_hash[title(project)] = {
+    project_hash[title(project).to_sym] = {
       image_link: image_link(project),
       description: description(project),
       location: location(project),
