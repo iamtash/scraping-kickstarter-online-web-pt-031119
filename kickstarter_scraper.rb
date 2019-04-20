@@ -36,7 +36,6 @@ def create_project_hash
       location: location(project),
       percent_funded: percent_funded(project)
     }
-    binding.pry
   end
 
 end
