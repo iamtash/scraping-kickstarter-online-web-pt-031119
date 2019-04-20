@@ -35,7 +35,7 @@ def create_project_hash
 
   projects = kickstarter.css("li.project.grid_4")
 
-  projects: {}
+  projects: Hash.new
   projects.each do |project|
     :projects[title] = {
       image_link: image_link,
